@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Lato', 'Raleway', sans-serif;
+    line-height: 1.7;
+    height:10000px;
+    background:#b2cbe4;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+}
+
+.header_left {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-left: 4rem;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.header_right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    color: black;
+    font-size: 24px;
+}
+
+.header_right a {
+    padding: 1rem;
+}
+
+.header_right:last-child {
+    padding-right: 1rem;
+}
+
+.contact_li img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 1.5rem 1.2rem 0 0;
+}
+
+.contact_li {
+    list-style: none;
+}
+
+.home {
+    color: black;
+    font-size: 30px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin-top: 5rem auto;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.home img {
+    border-radius: 50%;
+    /*角を丸くする指定*/
+    width: 20rem;
+    /*横幅*/
+    height: 20rem;
+    /*縦幅*/
+}
+
+.works li{
+    display: inline;
+    padding: 2rem;
+}
+
+.works img{
+    width: 18rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents h1{
+    margin: 2rem;
+    padding-bottom: 5rem;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.aboutme_left{
+    padding: 2rem;
+}
+
+.aboutme_right{
+    padding: 2rem;
+}
+

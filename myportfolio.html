@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1">
+  <title>Benio Katauchi</title>
+  <meta name="discription" content="縣内紅央のポートフォリオサイトです。">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+</head>
+
+<body>
+  <!-- トップページ -->
+  <div id="firstview">
+    <header>
+      <nav class="header_left">
+        <ul class="contact_li">
+          <li><a href="https://www.facebook.com/bracsa0817" target="_blank"><img src="img/FB_icon.png"
+                alt="facebook"></a></li>
+          <li><a href="https://www.instagram.com/bracsa0817" target="_blank"><img src="img/IG_icon.png"
+                alt="instagram"></a></li>
+        </ul>
+      </nav>
+      <nav class="header_right">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#contuct">Contuct</a></li>
+      </nav>
+    </header>
+
+    <div class="home">
+      <img src="img/pic2.jpg" alt="pf_pic">
+      <h1>Benio Katauchi</h1>
+      <h3>Student</h3>
+    </div>
+  </div>
+  <div class="contents">
+    <!-- 制作物 -->
+    <div id="works"></div>
+    <div class="works">
+      <h1>Works</h1>
+      <ul>
+        <li><img src="img/work_bg.png" alt=""></li>
+        <li><img src="img/work_bg.png" alt=""></li>
+        <li><img src="img/work_bg.png" alt=""></li>
+        <li><img src="img/work_bg.png" alt=""></li>
+      </ul>
+    </div>
+    <!-- 自己紹介 -->
+    <div id="aboutme"></div>
+    <h1>About me</h1>
+    <div class="aboutme">
+      <div class="aboutme_left">
+        <!-- スワイパー -->
+        <!-- スライダー全体を括るメインコンテナ -->
+        <div class="swiper-container">
+          <!-- 全スライドをまとめるラッパー -->
+          <div class="swiper-wrapper">
+            <!-- 各スライド -->
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+
+          <!-- ページネーションを表示する場合 -->
+          <div class="swiper-pagination"></div>
+
+          <!-- 前後スライドへのナビゲーションボタン(矢印)を表示する場合 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+        </div>
+
+      </div>
+      <div class="aboutme_right">
+        <h2>縣内 紅央</h2>
+        <p>大分の大学に通う大学3年生。山口県出身。</p>
+        <p>プロダクト志向のフロントエンジニアを目指してします。</p>
+        <p>大学時代はハンガリーに交換留学に行ってました。</p>
+        <p>クラシック音楽とヴィオラを弾くことが好きです。</p>
+        <h2>スキル</h2>
+        <p>HTML/CSS, JavaScript, Vue.js</p>
+      </div>
+    </div>
+    <!-- 連絡先 -->
+    <div id="contuct"></div>
+    <h1>Contuct</h1>
+    <div class="contuct">
+    </div>
+  </div>
+</body>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    // オプションパラメータ(一部のみ抜粋)
+    loop: true, // 最後のスライドまで到達した場合、最初に戻らずに続けてスライド可能にするか。
+    speed: 600, // スライドが切り替わるトランジション時間(ミリ秒)。
+    slidesPerView: 4, // 何枚のスライドを表示するか
+    spaceBetween: 10, // スライド間の余白サイズ(ピクセル)
+    direction: 'horizontal', // スライド方向。 'horizontal'(水平) か 'vertical'(垂直)。effectオプションが 'slide' 以外は無効。
+    effect: 'slide', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
+
+    // スライダーの自動再生
+    // autoplay: true 　のみなら既定値での自動再生
+    autoplay: {
+      delay: 3000, // スライドが切り替わるまでの表示時間(ミリ秒)
+      stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
+      disableOnInteraction: true // ユーザーのスワイプ操作を検出したら自動再生を中止するか
+    },
+
+    // レスポンシブ化条件
+    breakpoints: {
+      // 980ピクセル幅以下になったら
+      980: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      // 640ピクセル幅以下になったら
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    },
+
+    // ページネーションを表示する場合
+    pagination: {
+      el: '.swiper-pagination', // ページネーションを表示するセレクタ
+    },
+
+    // 前後スライドへのナビゲーションを表示する場合
+    navigation: {
+      nextEl: '.swiper-button-next', // 次のスライドボタンのセレクタ
+      prevEl: '.swiper-button-prev', // 前のスライドボタンのセレクタ
+    },
+
+    // スクロールバーを表示する場合
+    scrollbar: {
+      el: '.swiper-scrollbar', // スクロールバーを表示するセレクタ
+    }
+  });
+  //スクロール発火イベント
+  window.addEventListener("scroll", function () {
+    //スクロールの高さを取得
+    let scroll = window.pageYOffset;
+    if (scroll > 1500) {
+      document.body.style.backgroundColor = '#e8ecef';
+    } else if (scroll > 1300) {
+      document.body.style.backgroundColor = '#e8ecef';
+    } else if (scroll > 500) {
+      document.body.style.backgroundColor = '#e8ecef';
+    } else {
+      document.body.style.backgroundColor = '#b2cbe4';
+    }
+  });
+</script>
+
+</html>
