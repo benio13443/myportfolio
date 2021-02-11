@@ -32,6 +32,7 @@ a:active {
     width: 20px;
     height: 20px;
     margin: 0;
+    z-index: 3;
 }
 
 .header_right {
@@ -86,7 +87,7 @@ a:active {
 
 .works li{
     display: inline;
-    padding: 2rem;
+    margin: 2rem;
 }
 
 .works img{
@@ -97,24 +98,150 @@ a:active {
 
 .contents h1{
     margin: 2rem;
-    padding-bottom: 5rem;
 }
 
 .aboutme{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.aboutme_left{
+    padding-right: 1rem;
+}
+
+.aboutme_right{
+    padding-left: 1rem;
+}
+
+.aboutme_right h2{
+    font-size: 20px;
+}
+
+.aboutme img{
+    width: 600px;
+    height: 400px;
 }
 
 .swiper-container {
     width: 600px;
-    height: 300px;
+    height: 400px;
 }
 
-.aboutme_left{
-    padding: 2rem;
+.swiper-wrapper{
+    width: 600px;
+    height: 400px;
 }
 
-.aboutme_right{
-    padding: 2rem;
+.contact{
+    margin: 2rem;
+    font-size: 18PX;
 }
 
+.contact a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+.contact a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+  }
+
+  .contact a:hover::after {
+    transform: scale(1, 1);
+  }
+
+  .contact img{
+    width: 24px;
+    transition: transform 0.3s ease-out;
+  }
+  .contact img:hover {
+    transform: rotate(30deg);
+  }
+
+/* PC用のCSSはメディアクエリの外に記述する */
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    h1{
+        font-size: 36px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    .header_right {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        color: black;
+        font-size: 20px;
+    }
+    .contact_li img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin: 1.5rem 1rem 0 0;
+    }
+
+    .header_right a {
+        padding: 0.5rem;
+    }
+
+    .home img {
+        border-radius: 50%;
+        /*角を丸くする指定*/
+        width: 15rem;
+        /*横幅*/
+        height: 15rem;
+        /*縦幅*/
+    }
+
+    .contents h1 {
+        margin: 2rem;
+    }
+    .works img{
+        width: 18rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .aboutme img{
+        width: 360px;
+        height: 240px;
+        position: relative;
+    }
+    
+    .swiper-container {
+        width: 360px;
+        height: 240px;
+        position: relative;
+    }
+    
+    .swiper-wrapper{
+        width: 360px;
+        height: 240px;
+        position: relative;
+    }
+
+    .aboutme_left {
+        padding-right: 0;
+    }
+}
