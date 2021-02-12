@@ -166,7 +166,7 @@ a:active {
     width: 24px;
     transition: transform 0.3s ease-out;
   }
-  .contact img:hover {
+  .contact:hover img{
     transform: rotate(30deg);
   }
 
