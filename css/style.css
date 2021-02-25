@@ -108,15 +108,16 @@ a:active {
 }
 
 .aboutme_left{
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 .aboutme_right{
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .aboutme_right h2{
     font-size: 20px;
+    /* font-family: 'Sawarabi Mincho', sans-serif; */
 }
 
 .aboutme img{
@@ -136,7 +137,7 @@ a:active {
 
 .contact{
     margin: 2rem;
-    font-size: 18PX;
+    font-size: 40PX;
 }
 
 .contact a {
@@ -163,7 +164,7 @@ a:active {
   }
 
   .contact img{
-    width: 24px;
+    width: 50px;
     transition: transform 0.3s ease-out;
   }
   .contact:hover img{

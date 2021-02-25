@@ -8,6 +8,7 @@
   <meta name="discription" content="縣内紅央のポートフォリオサイトです。">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
   <link href="css/style.css" rel="stylesheet">
@@ -56,18 +57,19 @@
     <h1>About me</h1>
     <div class="aboutme">
       <div class="aboutme_left">
+
         <body>
           <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./img/photo1.JPG" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/photo2.JPG" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/photo3.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/photo4.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/photo5.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/photo6.jpg" alt=""></div>
-              </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/photo1.JPG" alt=""></div>
+              <div class="swiper-slide"><img src="./img/photo2.JPG" alt=""></div>
+              <div class="swiper-slide"><img src="./img/photo3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/photo4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/photo5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/photo6.jpg" alt=""></div>
+            </div>
           </div>
-          </body>
+        </body>
       </div>
       <div class="aboutme_right">
         <h2>縣内 紅央</h2>
@@ -88,22 +90,18 @@
   </div>
 </body>
 <script>
-var mySwiper = new Swiper ('.swiper-container', {
-  autoplay: {
-    delay: 0,
-  },
-  loop: true,
-  speed: 4000,
-});
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+      delay: 800,
+    },
+    loop: true,
+    speed: 4000,
+  });
   //スクロール発火イベント
   window.addEventListener("scroll", function () {
     //スクロールの高さを取得
     let scroll = window.pageYOffset;
-    if (scroll > 1500) {
-      document.body.style.backgroundColor = '#e8ecef';
-    } else if (scroll > 1300) {
-      document.body.style.backgroundColor = '#e8ecef';
-    } else if (scroll > 500) {
+    if (scroll > 500) {
       document.body.style.backgroundColor = '#e8ecef';
     } else {
       document.body.style.backgroundColor = '#b2cbe4';
