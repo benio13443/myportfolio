@@ -52,6 +52,10 @@ a:active {
     padding-right: 1rem;
 }
 
+.header_right a:hover {
+    opacity: 0.5;
+}
+
 .contact_li img {
     position: relative;
     width: 20px;
@@ -78,20 +82,14 @@ a:active {
 
 .home img {
     border-radius: 50%;
-    /*角を丸くする指定*/
     width: 20rem;
-    /*横幅*/
     height: 20rem;
-    /*縦幅*/
 }
 
 .works ul {
     display: flex;
-    /* 親要素に指定することで、Flexboxが適用される */
     flex-direction: row;
-    /* 左から右に横並び（デフォルト値なのでなくても可） */
     justify-content: center;
-    /* 中央揃え */
     list-style: none;
     flex-wrap: wrap;
 }
@@ -102,13 +100,13 @@ a:active {
 
 .works img {
     width: 18rem;
-    transition:0.1s all;
+    transition: 0.1s all;
 }
 
 .works img:hover {
     opacity: 0.5;
-    transform:scale(1.05,1.05);
-    transition:0.1s all;
+    transform: scale(1.05, 1.05);
+    transition: 0.1s all;
 }
 
 .contents h1 {
@@ -131,23 +129,21 @@ a:active {
 }
 
 .aboutme_right h2 {
-    font-size: 20px;
-    /* font-family: 'Sawarabi Mincho', sans-serif; */
+    font-size: 24px;
 }
 
-.aboutme img {
-    width: 600px;
-    height: 400px;
+.aboutme_right p {
+    font-size: 18px;
 }
 
 .swiper-container {
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
 }
 
-.swiper-wrapper {
-    width: 600px;
-    height: 400px;
+.swiper-container img {
+    width: 800px;
+    height: 600px;
 }
 
 .contact {
@@ -191,7 +187,7 @@ a:active {
 @media screen and (max-width: 480px) {
 
     /* 480px以下に適用されるCSS（スマホ用） */
-    
+
     h1 {
         font-size: 36px;
     }
@@ -260,9 +256,9 @@ a:active {
 
     .aboutme_left {
         padding-right: 0;
-    } 
+    }
 
-    .aboutme_right{
+    .aboutme_right {
         padding: 2rem;
         margin: 0;
     }
