@@ -7,7 +7,7 @@ html {
 body {
     font-family: 'Lato', 'Raleway', sans-serif;
     line-height: 1.7;
-    height:10000px;
+    height:2000px;
     background:#b2cbe4;
     transition: 1s;
 }
@@ -85,15 +85,24 @@ a:active {
     /*縦幅*/
 }
 
-.works li{
-    display: inline;
+.works ul{
+    display: flex; /* 親要素に指定することで、Flexboxが適用される */
+	flex-direction: row; /* 左から右に横並び（デフォルト値なのでなくても可） */
+	justify-content: center; /* 中央揃え */
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.works li {
     margin: 2rem;
 }
 
 .works img{
     width: 18rem;
-    align-items: center;
-    justify-content: center;
+}
+
+.converterapp:hover{
+    background: url("img/converterapp_info.png");
 }
 
 .contents h1{
@@ -138,6 +147,7 @@ a:active {
 .contact{
     margin: 2rem;
     font-size: 40PX;
+    width: fit-content;
 }
 
 .contact a {
