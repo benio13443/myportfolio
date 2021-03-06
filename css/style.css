@@ -188,15 +188,10 @@ a:active {
     transform: rotate(30deg);
 }
 
-/* PC用のCSSはメディアクエリの外に記述する */
-
-@media screen and (max-width: 959px) {
-    /* 959px以下に適用されるCSS（タブレット用） */
-}
-
 @media screen and (max-width: 480px) {
 
     /* 480px以下に適用されるCSS（スマホ用） */
+    
     h1 {
         font-size: 36px;
     }
@@ -251,10 +246,6 @@ a:active {
         position: relative;
     }
 
-    .aboutme_right{
-        margin-top: 32px;
-    }
-
     .swiper-container {
         width: 360px;
         height: 240px;
@@ -269,5 +260,10 @@ a:active {
 
     .aboutme_left {
         padding-right: 0;
+    } 
+
+    .aboutme_right{
+        padding: 2rem;
+        margin: 0;
     }
 }
