@@ -7,8 +7,8 @@ html {
 body {
     font-family: 'Lato', 'Raleway', sans-serif;
     line-height: 1.7;
-    height:2000px;
-    background:#b2cbe4;
+    height: 2500px;
+    background: #b2cbe4;
     transition: 1s;
 }
 
@@ -85,10 +85,13 @@ a:active {
     /*縦幅*/
 }
 
-.works ul{
-    display: flex; /* 親要素に指定することで、Flexboxが適用される */
-	flex-direction: row; /* 左から右に横並び（デフォルト値なのでなくても可） */
-	justify-content: center; /* 中央揃え */
+.works ul {
+    display: flex;
+    /* 親要素に指定することで、Flexboxが適用される */
+    flex-direction: row;
+    /* 左から右に横並び（デフォルト値なのでなくても可） */
+    justify-content: center;
+    /* 中央揃え */
     list-style: none;
     flex-wrap: wrap;
 }
@@ -97,39 +100,42 @@ a:active {
     margin: 2rem;
 }
 
-.works img{
+.works img {
     width: 18rem;
+    transition:0.1s all;
 }
 
-.converterapp:hover{
-    background: url("img/converterapp_info.png");
+.works img:hover {
+    opacity: 0.5;
+    transform:scale(1.05,1.05);
+    transition:0.1s all;
 }
 
-.contents h1{
+.contents h1 {
     margin: 2rem;
 }
 
-.aboutme{
+.aboutme {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
 }
 
-.aboutme_left{
+.aboutme_left {
     padding-right: 2rem;
 }
 
-.aboutme_right{
+.aboutme_right {
     padding-left: 2rem;
 }
 
-.aboutme_right h2{
+.aboutme_right h2 {
     font-size: 20px;
     /* font-family: 'Sawarabi Mincho', sans-serif; */
 }
 
-.aboutme img{
+.aboutme img {
     width: 600px;
     height: 400px;
 }
@@ -139,12 +145,12 @@ a:active {
     height: 400px;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     width: 600px;
     height: 400px;
 }
 
-.contact{
+.contact {
     margin: 2rem;
     font-size: 40PX;
     width: fit-content;
@@ -154,7 +160,7 @@ a:active {
     position: relative;
     display: inline-block;
     text-decoration: none;
-  }
+}
 
 .contact a::after {
     position: absolute;
@@ -167,32 +173,35 @@ a:active {
     transform: scale(0, 1);
     transform-origin: left top;
     transition: transform .3s;
-  }
+}
 
-  .contact a:hover::after {
+.contact a:hover::after {
     transform: scale(1, 1);
-  }
+}
 
-  .contact img{
+.contact img {
     width: 50px;
     transition: transform 0.3s ease-out;
-  }
-  .contact:hover img{
+}
+
+.contact:hover img {
     transform: rotate(30deg);
-  }
+}
 
 /* PC用のCSSはメディアクエリの外に記述する */
 
 @media screen and (max-width: 959px) {
-	/* 959px以下に適用されるCSS（タブレット用） */
+    /* 959px以下に適用されるCSS（タブレット用） */
 }
+
 @media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
-    h1{
+
+    /* 480px以下に適用されるCSS（スマホ用） */
+    h1 {
         font-size: 36px;
     }
 
-    h3{
+    h3 {
         font-size: 24px;
     }
 
@@ -204,6 +213,7 @@ a:active {
         color: black;
         font-size: 20px;
     }
+
     .contact_li img {
         position: relative;
         width: 20px;
@@ -227,26 +237,31 @@ a:active {
     .contents h1 {
         margin: 2rem;
     }
-    .works img{
+
+    .works img {
         width: 18rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .aboutme img{
+
+    .aboutme img {
         width: 360px;
         height: 240px;
         position: relative;
     }
-    
+
+    .aboutme_right{
+        margin-top: 32px;
+    }
+
     .swiper-container {
         width: 360px;
         height: 240px;
         position: relative;
     }
-    
-    .swiper-wrapper{
+
+    .swiper-wrapper {
         width: 360px;
         height: 240px;
         position: relative;
