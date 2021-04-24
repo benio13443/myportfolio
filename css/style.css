@@ -116,8 +116,15 @@ a:active {
 .aboutme {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin: auto;
+    padding: 2rem;
+}
+
+.aboutme img {
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    position: relative;
 }
 
 .aboutme_left {
@@ -137,13 +144,13 @@ a:active {
 }
 
 .swiper-container {
-    width: 800px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
 }
 
 .swiper-container img {
-    width: 800px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
 }
 
 .contact {
@@ -237,29 +244,49 @@ a:active {
     }
 
     .aboutme img {
-        width: 360px;
-        height: 240px;
+        width: 310px;
+        height: 190px;
+        justify-content: center;
         position: relative;
     }
 
     .swiper-container {
-        width: 360px;
-        height: 240px;
+        width: 310px;
+        height: 190px;
         position: relative;
     }
 
     .swiper-wrapper {
-        width: 360px;
-        height: 240px;
+        width: 310px;
+        height: 190px;
         position: relative;
     }
+
+    .aboutme {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 2rem;
+    }
+
 
     .aboutme_left {
         padding-right: 0;
     }
 
     .aboutme_right {
-        padding: 2rem;
+        padding: 1rem;
         margin: 0;
     }
+
+    .aboutme_right h2 {
+        font-size: 16px;
+    }
+
+    .aboutme_right p {
+        font-size: 12px;
+    }
+
+
 }
